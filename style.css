@@ -1,0 +1,196 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("villa.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  right: 0;
+  background-size:cover;
+  color: rgb(255, 255, 255);
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+ 
+
+}
+
+.welcome {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.871);
+  margin-top: 20%;
+  margin-bottom: 25%;
+}
+.welcome p {
+  position: relative;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6em;
+  font-weight: bold;
+  text-shadow: 1px 3px 3px black;
+  font-family: cursive;
+}
+
+.welcome h1 {
+  position: relative;
+  left: 20%;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+  margin-top: -0.2em;
+  animation: glow 2s ease-in-out alternate;
+  color: rgb(212, 159, 26);
+  text-shadow: 1px 3px 3px black;
+  font-family: cursive;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 2px #a49b9b;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #958f8f;
+  }
+}
+
+.products {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("tripathi.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+}
+.products h1 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  color: rgb(221, 166, 27);
+  text-shadow: 1px 3px 5px black;
+}
+
+.product-category {
+  display: flex;
+  flex-direction: row;
+  gap: 25%;
+}
+
+.product-img {
+  margin: 10px;
+  width: 10%;
+  padding: 10px;
+  border: 10px solid #ccc;
+  margin-bottom: 5%;
+}
+
+.products .product-img img{
+  animation: load 0.8s ease-in-out alternate;
+  border-radius: 5px;
+  width: 300%;
+  height: auto;
+}
+
+.description {
+  max-width: 50%;
+  height: 10%;
+  margin-left: 50px;
+  text-align: left;
+  margin-top: 5%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@-webkit-keyframes load {
+  from {
+    margin-left: 50px;
+  }
+
+}
+
+
+@media(max-width: 786px) {
+  .welcome p{
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .welcome h1 {
+    font-size: 2em;
+    width: 20em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  .products .product-img{
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+  }
+  .products .product-img img{
+    border-radius: 5px;
+    width: 350%;
+    height: 100%;
+  }
+
+  .description {
+    max-width: 50%;
+    height: 5%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+  }
+}
+
+.about{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("pixelcut-export.jpeg");
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(221, 166, 27);
+    text-shadow: 1px 3px 5px black;
+}
+
+.about .details{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.about .founder{
+  gap: 20px;
+  color: #ad9526;
+  font-weight: bold;
+}
+
+.about .acknowledgment{
+  text-align: center;
+  color: rgba(232, 235, 237, 0.873);
+  font-weight: bold;
+  margin-bottom: 18% ;
+
+}
+
+.about .images{
+  display: flex;
+  /* flex-direction: column; */
+  gap: 60%;
+}
+
+
+
+
